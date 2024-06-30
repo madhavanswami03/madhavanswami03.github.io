@@ -1,52 +1,50 @@
 console.log("Hello");
 
-const navMenu = document.getElementById('nav-menu');
-const navToggle = document.getElementById('nav-toggle');
-const navClose = document.getElementById('nav-close');
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
 
 if (navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-    })
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.add("show-menu");
+  });
 }
 
 if (navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-    })
+  navClose.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+  });
 }
 
-const navLink = document.querySelectorAll('.nav__link');
+const navLink = document.querySelectorAll(".nav__link");
 
 function linkClick() {
-    const navMenu = document.getElementById('nav-menu');
+  const navMenu = document.getElementById("nav-menu");
 
-    navMenu.classList.remove('show-menu');
+  navMenu.classList.remove("show-menu");
 }
 
-navLink.forEach(n => n.addEventListener('click', linkClick))
+navLink.forEach((n) => n.addEventListener("click", linkClick));
 
-const skillContent = document.getElementsByClassName('skills__content');
-const skillHeader = document.querySelectorAll('.skills__header');
+const skillContent = document.getElementsByClassName("skills__content");
+const skillHeader = document.querySelectorAll(".skills__header");
 
+// function toggleSkills() {
+//     let itemClass = this.parentNode.className;
 
-function toggleSkills() {
-    let itemClass = this.parentNode.className;
+//     for (let i = 0; i < skillContent.length; i++) {
+//         skillContent[i].className = 'skills__content skills__close';
+//     }
 
-    for (let i = 0; i < skillContent.length; i++) {
-        skillContent[i].className = 'skills__content skills__close';
-    }
+//     if (itemClass === 'skills__content skills__close') {
+//         this.parentNode.className = 'skills__content skills__open';
+//     }
 
-    if (itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open';
-    }
+// }
 
-}
-
-skillHeader.forEach(element => {
-    element.addEventListener('click', toggleSkills);
-})
-
+skillHeader.forEach((element) => {
+  element.addEventListener("click", toggleSkills);
+});
 
 // const tabs = document.querySelectorAll('[data-target]');
 // const tabContent = document.querySelectorAll('[data-content]');
@@ -54,8 +52,6 @@ skillHeader.forEach(element => {
 // tabs.forEach(tab => {
 //     tab.addEventListener('click', )
 // })
-
-
 
 // const sections = document.querySelectorAll('section[id]')
 
@@ -76,25 +72,24 @@ skillHeader.forEach(element => {
 // }
 // window.addEventListener('scroll', scrollActive)
 
-
 function scrollHeader() {
-    const nav = document.getElementById('header')
-    // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+  const nav = document.getElementById("header");
+  // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 80) nav.classList.add("scroll-header");
+  else nav.classList.remove("scroll-header");
 }
-window.addEventListener('scroll', scrollHeader)
-
+window.addEventListener("scroll", scrollHeader);
 
 function scrollUp() {
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+  const scrollUp = document.getElementById("scroll-up");
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener("scroll", scrollUp);
 
-
-
-{/* 
+{
+  /* 
     const themeButton = document.getElementById('theme-button')
     const darkTheme = 'dark-theme'
     const iconTheme = 'fa-sun'
@@ -125,36 +120,34 @@ window.addEventListener('scroll', scrollUp)
         localStorage.setItem('selected-theme', getCurrentTheme())
         localStorage.setItem('selected-icon', getCurrentIcon())
     })
-*/}
-
+*/
+}
 
 let swiper = new Swiper(".Slideshow__contanier", {
-    cssMode: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: false,
-    autoplay: {
-        delay: 3000,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
-    observer: true
+  cssMode: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: false,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  observer: true,
 });
-
-
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }

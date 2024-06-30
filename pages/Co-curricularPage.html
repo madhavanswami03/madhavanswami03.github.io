@@ -1,46 +1,55 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="../public/css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="../public/css/styles.css">
-    <link rel="stylesheet" href="../public/css/styles_1.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/styles_1.css" />
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <title>Co-Curricular Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header" id="header">
+      <div class="topnav" id="myTopnav">
+        <a href="/index.html" class="nav__logo"
+          ><span>MADHAVAN</span> <span>SWAMI</span>
+        </a>
 
-    <div class="topnav" id="myTopnav">
-    
-        <a href="/index.html" class="nav__logo"><span>MADHAVAN</span> <span>SWAMI</span> </a>
-    
-        <a href="/pages/resumePage.html" >My Resume</a>
+        <a href="/pages/resumePage.html">My Resume</a>
         <a href="/pages/codingProjects.html">Coding-Projects</a>
         <a href="/pages/creativeProjects.html">Creative-Projects</a>
-        <a href="/pages/Co-curricularPage.html" class="active">Co-curricular Activities</a>
+        <a href="/pages/Co-curricularPage.html" class="active"
+          >Co-curricular Activities</a
+        >
         <a href="/pages/contactPage.html">Contact Me</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>
         </a>
-    </div>
+      </div>
     </header>
     <div class="container">
+      <!-- ###################### Cycling ########################### -->
 
-        <!-- ###################### Cycling ########################### -->
-
-        <!--  <div class="details">
+      <!--  <div class="details">
                             - i am an enthusiast cyclist. My dream ride was Pune to Kanyakumari, <br>
                             1600 kms - 10 Days in total which I could complete in December of 2021. <br> It was an
                             enriching holistic experience overall.
@@ -64,297 +73,320 @@
                             cover long distances. It's the same as 100m race vs marathon.
                         </div> -->
 
+      <!-- ###################### Extras ########################### -->
+      <div style="text-align: center">
+        <section class="cycling section" id="cycling">
+          <h2 class="section__title">Interests And Hobbies</h2>
+          <span class="section__subtitle">My interests and and hobbies</span>
+          <div class="cycling__container container">
+            <!-- <div class="cycling__sections"> -->
+            <div
+              class="cycling__content cycling__active"
+              data-content
+              id="education"
+            >
+              <div class="cycling__data">
+                <div>
+                  <h3>Cycling Enthusiast</h3>
+                  <div class="company">
+                    <li>
+                      Dream ride: Pune to Kanyakumari (1600 km in 10 days) a
+                      journey of endurance and consistency.
+                    </li>
+                    <li>
+                      Notable rides: Pune to Hampi (600 km), Pune to Pandharpur
+                      (450 km), Pune to Alibaug, and many more.
+                    </li>
+                    <li>
+                      Over 10,000 km cycled, with 6,500 km officially recorded.
+                    </li>
+                  </div>
+                </div>
+                <div>
+                  <span class="cycling__rounder"></span>
+                  <span class="cycling__line"></span>
+                </div>
+              </div>
 
+              <div class="cycling__data">
+                <div></div>
+                <div>
+                  <span class="cycling__rounder"></span>
+                  <span class="cycling__line"></span>
+                </div>
+                <div>
+                  <h3>Musician</h3>
+                  <div class="company">
+                    <li>
+                      Professional Tabla player with a diploma and currently
+                      pursuing a degree in Tabla.
+                    </li>
+                    <li>
+                      Hobbyist Harmonium and Synthesizer player, now learning
+                      Violin.
+                    </li>
+                    <li>Enjoy music production in free time.</li>
+                  </div>
+                </div>
+              </div>
 
-        <!-- ###################### Extras ########################### -->
-        <div style="text-align: center;">
-            <section class="cycling section" id="cycling">
-                <h2 class="section__title">Interests And Hobbies</h3>
-                    <span class="section__subtitle">My interests and and hobbies</span>
-                    <div class="cycling__container container">
+              <div class="cycling__data">
+                <div>
+                  <h3>Artist</h3>
+                  <div class="company">
+                    <li>
+                      Won 1st prize in a drawing competition in 2015, organized
+                      by India House Art Gallery, with 120 participating
+                      schools.
+                    </li>
+                    <li>
+                      Passionate about photography and videography, having
+                      worked for startups and covered college events.
+                    </li>
+                  </div>
+                </div>
+                <div>
+                  <span class="cycling__rounder"></span>
+                  <span class="cycling__line"></span>
+                </div>
+              </div>
 
-                        <!-- <div class="cycling__sections"> -->
-                        <div class="cycling__content cycling__active" data-content id="education">
+              <div class="cycling__data">
+                <div></div>
+                <div>
+                  <span class="cycling__rounder"></span>
+                  <span class="cycling__line"></span>
+                </div>
+                <div>
+                  <h3>Sports & Coaching</h3>
+                  <div class="company">
+                    <li>Played professional skating and assist in coaching.</li>
+                    <li>
+                      Core team member of Indo Athletic Society, organizing
+                      various events and activities.
+                    </li>
+                  </div>
+                </div>
+              </div>
 
-                            <div class="cycling__data">
-                                <div>
-                                    <h3>Cycling</h3>
-                                    <div class="company">Cycled More than
-                                        7000Kms and 5000Kms are
-                                        recorded oficially.</div>
-                                </div>
-                                <div>
-                                    <span class="cycling__rounder"></span>
-                                    <span class="cycling__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="cycling__data">
-                                <div></div>
-                                <div>
-                                    <span class="cycling__rounder"></span>
-                                    <span class="cycling__line"></span>
-                                </div>
-                                <div>
-                                    <h3>Tabla</h3>
-                                    <div class="company">I am a professional Tabla
-                                        player and completed my
-                                        diploma in Tabla <br>(5yrs
-                                        course). <br> Now i am pursuing
-                                        my degree in Tabla.</div>
-                                </div>
-                            </div>
-
-                            <div class="cycling__data">
-                                <div>
-                                    <h3>Harmonium and Synthesizer</h3>
-                                    <div class="company">I am a hobbyist
-                                        Harmonium and Synthesizer
-                                        player and have done
-                                        many performances in
-                                        school. And currently
-                                        learning Violin in my free
-                                        time.</div>
-                                </div>
-                                <div>
-                                    <span class="cycling__rounder"></span>
-                                    <span class="cycling__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="cycling__data">
-                                <div></div>
-                                <div>
-                                    <span class="cycling__rounder"></span>
-                                    <span class="cycling__line"></span>
-                                </div>
-                                <div>
-                                    <h3>Drawing and Painting</h3>
-                                    <div class="company">I am an Artist as well. In
-                                        2015, I won 1st price in
-                                        drawing competition
-                                        winning ₹10,000 cash price.
-                                        Organised by India House
-                                        Art Gallery, participated by
-                                        120 schools from all over
-                                        Pune. Got media coverage
-                                        also.</div>
-                                </div>
-                            </div>
-
-                            <div class="cycling__data">
-                                <div>
-                                    <h3>Professional Skating</h3>
-                                    <div class="company">I also used to do Professional
-                                        Skating, winning clusters
-                                        and participating in
-                                        regional levels.</div>
-                                </div>
-                                <div>
-                                    <span class="cycling__rounder"></span>
-                                    <span class="cycling__line"></span>
-                                </div>
-                            </div>
-
-                            <div class="cycling__data ">
-                                <div></div>
-                                <div>
-                                    <span class="cycling__rounder"></span>
-                                    <span class="cycling__line"></span>
-                                </div>
-                                <div>
-                                    <h3>Photography and Videography</h3>
-                                    <div class="company _company">I am a hobbyist
-                                        photographer and
-                                        videographer as well. Did
-                                        work for some startups and
-                                        also covered yearly college
-                                        events.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                    </div>
-
-            </section>
-        </div>
+              <div class="cycling__data">
+                <div>
+                  <h3>Photography and Videography</h3>
+                  <div class="company _company">
+                    I am a hobbyist photographer and videographer as well. Did
+                    work for some startups and also covered yearly college
+                    events.
+                  </div>
+                </div>
+                <div>
+                  <span class="cycling__rounder"></span>
+                  <span class="cycling__line"></span>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </section>
+      </div>
     </div>
 
-
-    <!--==================== Slideshow ====================-->
+    <!--==================== Cycling Journey ====================-->
 
     <section class="section">
-        <h2 class="section__title">Cycling Journey</h2>
-        <span class="section__subtitle"></span>
-        <div class="co-section">
-            <div class="codingproject co-section" style="width: 100%;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune - Alibag - Pune</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company"> Total of 300kms</div>
-                    <div class="qualification__calender">
-                        <i class="material-icons">calendar_today</i>
-                        December, 2020
-                    </div>
-                </div>
+      <h2 class="section__title">Cycling Journey</h2>
+      <span class="section__subtitle"></span>
+      <div class="co-section">
+        <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Alibag - Pune</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">Total of 300kms</div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              December, 2020
             </div>
-            <div class="codingproject co-section" style="width: 100%;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune - Gateway Of India - Pune</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company"> Total of 300kms</div>
-                    <div class="qualification__calender">
-                        <i class="material-icons">calendar_today</i>
-                        January, 2021
-                    </div>
-                </div>
-            </div>
-            <div class="codingproject co-section" style="width: 100%;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune - Shivneri Fort - Pune</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company"> Total of 200kms</div>
-                    <div class="qualification__calender">
-                        <i class="material-icons">calendar_today</i>
-                        August, 2021
-                    </div>
-                </div>
-            </div>
-
-            <div class="codingproject co-section" style="width: 100%;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune To Kanyakumari</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company">First Quantitative Longest Ride In The History Of Nation
-                        🇮🇳 1600kms</div>
-                    <div class="qualification__calender">
-                        <i class="material-icons">calendar_today</i>
-                        2018
-                    </div>
-                </div>
-            </div>
-            <div class="codingproject co-section" style="width: 100%;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune - Lohagad Fort - Pune</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company">Night Ride and Hike 100kms</div>
-                    <div class="qualification__calender">
-                        <i class="material-icons">calendar_today</i>
-                        January, 2022
-                    </div>
-                </div>
-            </div>
-            <div class="codingproject co-section" style="width: 100%;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune - Gateway Of India - Pune</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company"> Total of 300kms</div>
-                    <div class="qualification__calender">
-                        <i class="material-icons">calendar_today</i>
-                        January, 2022
-                    </div>
-                </div>
-            </div>
-            <div class="codingproject co-section" style="width: 100%; margin-bottom: 5rem;">
-                <div class="line">
-                    <span class="codingproject__line"></span>
-                    <span class="codingproject__rounder"></span>
-                </div>
-                <div>
-                    <h3 class="codingproject__title">Pune - Pandharpur - Pune</h3>
-                    <!-- <div class="date">March,2020</div> -->
-                    <div class="company _company">Devotional Wari with 1100 cyclists. <br>Total of 500kms</div>
-                    <div class="qualification__calender" style="padding-bottom: 0;">
-                        <i class="material-icons">calendar_today</i>
-                        June, 2022
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="section__title">Cycling Experiences </h2>
-            <span class="section__subtitle">And Learnings</span>    
-            <div>
-                <div class="details">
-                    - i am an enthusiast cyclist. My dream ride was Pune to Kanyakumari, 
-                    1600 kms - 10 Days in total which I could complete in December of 2021. <br> It was an
-                    enriching holistic experience overall.
-                    That ride taught me the power of consistency and how we can accomplish great things if we
-                    tackle one thing at a time and
-                    do it consistently over an extended period of time.
-                </div>
-                <div class="details">
-                    - This ride also taught me the importance of team work. We can surely do things faster
-                    if we work alone, but with a great team we can sustain it for longer time and the whole
-                    team gets further ahead than any single person can get.
-                </div>
-                <div class="details">
-                    - This ride also taught me the importance of team work. We can surely do things faster
-                    if we work alone, but with a great team we can sustain it for longer time and the whole
-                    team gets further ahead than any single person can get.
-                </div>
-                <div class="details">
-                    - I also learned that sprinting isn't always the solution. While we sprint, we may move
-                    fast but we get exhausted. Whereas if we move slow and steadily but consistently, we may
-                    cover long distances. It's the same as 100m race vs marathon.
-                </div>
-            </div>
-
+          </div>
         </div>
+        <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Gateway Of India - Pune</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">Total of 300kms</div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              26th January, 2021 - 2023
+            </div>
+          </div>
+        </div>
+        <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Shivneri Fort - Pune</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">Total of 200kms</div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              August, 2021
+            </div>
+          </div>
+        </div>
+
+        <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune To Kanyakumari</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">
+              First Quantitative Longest Ride In The History Of Nation 🇮🇳
+              1600kms
+            </div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              December, 2021
+            </div>
+          </div>
+        </div>
+
+        <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Lohagad Fort - Pune</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">Night Ride and Hike 100kms</div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              January, 2022
+            </div>
+          </div>
+        </div>
+
+        <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Gateway Of India - Pune</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">Total of 300kms</div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              January, 2022
+            </div>
+          </div>
+        </div>
+
+         <div class="codingproject co-section" style="width: 100%">
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Hampi</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">Total of 600kms</div>
+            <div class="qualification__calender">
+              <i class="material-icons">calendar_today</i>
+              December, 2022
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="codingproject co-section"
+          style="width: 100%; margin-bottom: 5rem"
+        >
+          <div class="line">
+            <span class="codingproject__line"></span>
+            <span class="codingproject__rounder"></span>
+          </div>
+          <div>
+            <h3 class="codingproject__title">Pune - Pandharpur - Pune</h3>
+            <!-- <div class="date">March,2020</div> -->
+            <div class="company _company">
+              Devotional Wari with 1500 cyclists. <br />Total of 500kms
+            </div>
+            <div class="qualification__calender" style="padding-bottom: 0">
+              <i class="material-icons">calendar_today</i>
+              June, 2022 - 2024
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section__title">Cycling Experiences</h2>
+        <span class="section__subtitle">And Learnings</span>
+        <div>
+          <div class="details">
+            - i am an enthusiast cyclist. My dream ride was Pune to Kanyakumari,
+            1600 kms - 10 Days in total which I could complete in December of
+            2021. <br />
+            It was an enriching holistic experience overall. That ride taught me
+            the power of consistency and how we can accomplish great things if
+            we tackle one thing at a time and do it consistently over an
+            extended period of time.
+          </div>
+          <div class="details">
+            - This ride also taught me the importance of team work. We can
+            surely do things faster if we work alone, but with a great team we
+            can sustain it for longer time and the whole team gets further ahead
+            than any single person can get.
+          </div>
+          <div class="details">
+            - This ride also taught me the importance of team work. We can
+            surely do things faster if we work alone, but with a great team we
+            can sustain it for longer time and the whole team gets further ahead
+            than any single person can get.
+          </div>
+          <div class="details">
+            - I also learned that sprinting isn't always the solution. While we
+            sprint, we may move fast but we get exhausted. Whereas if we move
+            slow and steadily but consistently, we may cover long distances.
+            It's the same as 100m race vs marathon.
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- add slideshow -->
 
     <!--==================== Slideshow ====================-->
     <section class="Slideshow section" id="Slideshow">
-        <h2 class="section__title">Slideshow</h2>
-        <span class="section__subtitle">Some Glimpse Of My Journey</span>
-        <div class="Slideshow__contanier container swiper mySwiper">
-            <div class="swiper-wrapper slideshow" id="slideshow_elemets">
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next">
-                <i class="material-icons arrow">keyboard_arrow_right</i>
-            </div>
-            <div class="swiper-button-prev">
-                <i class="material-icons arrow">navigate_before</i>
-            </div>
-
+      <h2 class="section__title">Slideshow</h2>
+      <span class="section__subtitle">Some Glimpse Of My Journey</span>
+      <div class="Slideshow__contanier container swiper mySwiper">
+        <div class="swiper-wrapper slideshow" id="slideshow_elemets"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next">
+          <i class="material-icons arrow">keyboard_arrow_right</i>
         </div>
+        <div class="swiper-button-prev">
+          <i class="material-icons arrow">navigate_before</i>
+        </div>
+      </div>
     </section>
 
     <!-- #################################################################### -->
-
 
     <script src="../swiper-bundle.min.js"></script>
 
     <script src="../index.js"></script>
     <script src="/pages/index.js"></script>
-
-</body>
-
+  </body>
 </html>
